@@ -1,0 +1,33 @@
+button {
+  color: blue;
+}
+button {
+  padding: 10px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #0d8bf2;
+}
+#contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+button {
+  background-color: #2196f3;
+}
+
+button.si {
+  background-color: green;
+}
+
+button.no {
+  background-color: red;
+}

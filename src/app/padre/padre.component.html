@@ -1,0 +1,20 @@
+<body>
+  <h1>{{ title }}</h1>
+
+  <div *ngFor="let voto of votos">
+    <app-hijo [voto]="voto.title" (unVoto)="addVoto($event)"></app-hijo>
+  </div>
+  <h3>{{ votacion }}</h3>
+
+  <div>
+    <p>Votos al candidato 1 = {{ c1 }}</p>
+    <p>Votos al candidato 2 = {{ c2 }}</p>
+    <p>Votos al candidato 3 = {{ c3 }}</p>
+    <p>Votos al candidato 4 = {{ c4 }}</p>
+  </div>
+
+  <div>
+    <button (click)="Finalizarvotar()">Terminar Votacion</button>
+  </div>
+  <h3>{{ Msg }}</h3>
+</body>
